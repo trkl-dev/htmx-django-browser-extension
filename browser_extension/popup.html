@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="htmx.min.js"></script>
+        <meta name="htmx-config" content='{"withCredentials": true}'>
+    </head>
+    <body>
+        <div hx-get="http://127.0.0.1:8000/extension/" hx-swap="outerHTML" hx-trigger="load" hx-target="this" >
+            <h1>Loading...</h1>
+        </div>
+    </body>
+</html>
